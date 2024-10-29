@@ -1,282 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <link rel="stylesheet" href="/src/styles/imports.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/imports.css" />
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Landing Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <i class="fa-solid fa-burger" id="nav_logo"> FOOD</i>
-            <ul class="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item ">
-                    <a href=".menu">Cardápio</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
+      <nav class="navbar">
+        <i class="fa-solid fa-burger" id="nav_logo"> FOOD</i>
+        <ul class="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
 
-            <button class="btn-default">
-                Peça aqui
-            </button>
+        <button class="btn-default">Peça aqui</button>
 
-            <button class="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+        <button class="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
 
-        <div id="mobile_menu">
-            <ul class="mobile_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
+      <div id="mobile_menu">
+        <ul class="mobile_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
 
-            <button class="btn-default">
-                Peça aqui
-            </button>
-        </div>
+        <button class="btn-default">Peça aqui</button>
+      </div>
     </header>
 
     <main class="content">
-        <section class="home">
-            <div class="shape"></div>
-            <div class="cta">
-                <h1 class="title">
-                    O sabor vai até
-                    <span>você</span>
-                </h1>
+      <section id="home">
+        <div class="shape"></div>
+        <div class="cta">
+          <h1 class="title">
+            O sabor vai até
+            <span>você</span>
+          </h1>
 
-                <p class="descripition">
-                    Especializada em comidas frescas e saborosas, oferecendo uma variedade de pratos, desde refeições prontas até lanches rápidos, sempre preparados
-                     com ingredientes de qualidade e foco no sabor e na experiência do cliente.
+          <p class="descripition">
+            Especializada em comidas frescas e saborosas, oferecendo uma
+            variedade de pratos, desde refeições prontas até lanches rápidos,
+            sempre preparados com ingredientes de qualidade e foco no sabor e na
+            experiência do cliente.
+          </p>
+
+          <div class="cta_buttons">
+            <a href="" class="btn-default"> Ver cardápio </a>
+
+            <a href="tel:+55981877965" class="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              <span>(88) 98187-7965</span>
+            </a>
+          </div>
+
+          <div class="social_media_buttons">
+            <a href="https://w.app/krCp7O">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://w.app/krCp7O">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="banner">
+          <img src="/src/images/hero.png" alt="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section_title">Cardápio</h2>
+        <h3 class="section_subtitle">Nossos pratos especiais</h3>
+        <div class="dishes">
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img src="/src/images/dish.png" alt="Prato um" class="dish_image" />
+            <h3 class="dish_title">Poke</h3>
+            <span class="dish_descripition"
+              >Poke é uma tigela havaiana de peixe fresco marinado, servido com
+              arroz, legumes e molhos.</span
+            >
+
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish_price">
+              <h4>R$ 52,90</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="/src/images/dish2.png"
+              alt="Prato um"
+              class="dish_image"
+            />
+            <h3 class="dish_title">Sanduiche</h3>
+            <span class="dish_descripition">
+              Sanduíche recheado com frango grelhado, queijo derretido e
+              verduras frescas, servido entre fatias de pão crocante.</span
+            >
+
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish_price">
+              <h4>R$ 8,99</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="/src/images/dish3.png"
+              alt="Prato um"
+              class="dish_image"
+            />
+            <h3 class="dish_title">Salada de frutas</h3>
+            <span class="dish_descripition"
+              >Uma refrescante salada de frutas com pedaços suculentos de kiwi e
+              morango.</span
+            >
+
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish_price">
+              <h4>R$ 25,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="/src/images/dish4.png"
+              alt="Prato um"
+              class="dish_image"
+            />
+            <h3 class="dish_title">Macarrão Yakisoba</h3>
+            <span class="dish_descripition"
+              >Macarrão refogado com legumes e carnes, temperado com um molho
+              agridoce.</span
+            >
+
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+
+            <div class="dish_price">
+              <h4>R$ 49,99</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img
+          src="/src/images/chef.png"
+          alt="Imagem do chefe"
+          class="testimonial_chef"
+        />
+
+        <div class="testimonials_content">
+          <h2 class="section_title">Depoimentos</h2>
+          <h3 class="section_subtitle">O que os cliente falam sobre nós</h3>
+
+          <div class="feedbacks">
+            <div class="feedback">
+              <img
+                src="/src/images/avatar1.jpg"
+                alt="Avatar"
+                class="feedback_avatar"
+              />
+              <div class="feedback_content">
+                <p class="feedback_name">
+                  Maria
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
                 </p>
-
-                <div class="cta_buttons">
-                    <a href="" class="btn-default">
-                        Ver cardápio
-                    </a>
-
-                    <a href="tel:+55981877965" class="phone_button">
-                        <button class="btn-default">
-                            <i class="fa-solid fa-phone"></i>
-                        </button>
-                        <span>(88) 98187-7965</span>
-                    </a>
-                </div>
-
-                <div class="social_media_buttons">
-                    <a href="https://w.app/krCp7O">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="https://w.app/krCp7O">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
+                <p class="feedback_descripiton">
+                  Prato bem apresentado, com sabores perfeitamente equilibrados.
+                  A comida estava deliciosa, e a experiência superou as
+                  expectativas. Ótimo atendimento e ambiente agradável. Saí
+                  extremamente satisfeito!
+                </p>
+              </div>
             </div>
 
-            <div class="banner">
-                <img src="/src/images/hero.png" alt="">
+            <div class="feedback">
+              <img
+                src="/src/images/avatar2.jpg"
+                alt="Avatar"
+                class="feedback_avatar"
+              />
+              <div class="feedback_content">
+                <p class="feedback_name">
+                  João
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p class="feedback_descripiton">
+                  Ótima experiência gastronômica! A comida estava saborosa e bem
+                  servida, com um tempero na medida certa. Atendimento atencioso
+                  e ambiente acolhedor. Uma escolha que valeu a pena!
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section class="menu">
-            <h2 class="section_title">Cardápio</h2>
-            <h3 class="section_subtitle">Nossos pratos especiais</h3>
-            <div class="dishes">
-                <div class="dish">
-                    <div class="dish_heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="/src/images/dish.png" alt="Prato um" class="dish_image">
-                    <h3 class="dish_title">Poke</h3>
-                    <span class="dish_descripition">Poke é uma tigela havaiana de peixe fresco marinado, servido com arroz, legumes e molhos.</span>
-
-                    <div class="dish_rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish_price">
-                        <h4>R$ 52,90</h4>
-                        <button class="btn-default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="dish">
-                    <div class="dish_heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="/src/images/dish2.png" alt="Prato um" class="dish_image">
-                    <h3 class="dish_title">Sanduiche</h3>
-                    <span class="dish_descripition"> Sanduíche recheado com frango grelhado, queijo derretido e verduras frescas, servido entre fatias de pão crocante.</span>
-
-                    <div class="dish_rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish_price">
-                        <h4>R$ 8,99</h4>
-                        <button class="btn-default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="dish">
-                    <div class="dish_heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="/src/images/dish3.png" alt="Prato um" class="dish_image">
-                    <h3 class="dish_title">Salada de frutas</h3>
-                    <span class="dish_descripition">Uma refrescante salada de frutas com pedaços suculentos de kiwi e morango.</span>
-
-                    <div class="dish_rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish_price">
-                        <h4>R$ 25,00</h4>
-                        <button class="btn-default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="dish">
-                    <div class="dish_heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="/src/images/dish4.png" alt="Prato um" class="dish_image">
-                    <h3 class="dish_title">Macarrão Yakisoba</h3>
-                    <span class="dish_descripition">Macarrão refogado com legumes e carnes, temperado com um molho agridoce.</span>
-
-                    <div class="dish_rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
-                    </div>
-
-                    <div class="dish_price">
-                        <h4>R$ 49,99</h4>
-                        <button class="btn-default">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonials">
-            <img src="/src/images/chef.png" alt="Imagem do chefe" class="testimonial_chef">
-
-            <div class="testimonials_content">
-                <h2 class="section_title">Depoimentos</h2>
-                <h3 class="section_subtitle">O que os cliente falam sobre nós</h3>
-
-                <div class="feedbacks">
-                    <div class="feedback">
-                        <img src="/src/images/avatar1.jpg" alt="Avatar" class="feedback_avatar">
-                        <div class="feedback_content">
-                            <p class="feedback_name">Maria
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p class="feedback_descripiton">Prato bem apresentado, com sabores perfeitamente equilibrados.
-                                 A comida estava deliciosa, e a experiência superou as expectativas. Ótimo atendimento e ambiente agradável. Saí extremamente satisfeito!</p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <img src="/src/images/avatar2.jpg" alt="Avatar" class="feedback_avatar">
-                        <div class="feedback_content">
-                            <p class="feedback_name">João
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p class="feedback_descripiton">Ótima experiência gastronômica! A comida estava saborosa e bem servida, com um tempero na medida certa.
-                                 Atendimento atencioso e ambiente acolhedor. Uma escolha que valeu a pena!</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="btn-default">Ver mais avaliações</button>
-            </div>
-        </section>
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <img src="/src/images/wave.svg" alt="">
+      <img src="/src/images/wave.svg" alt="" />
 
-        <div class="footer_items">
-            <span class="copyright">
-                &copy 2024 Yure
-            </span>
+      <div class="footer_items">
+        <span class="copyright"> &copy 2024 Yure </span>
 
-            <div class="social_media_buttons">
-                <a href="https://w.app/krCp7O">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
+        <div class="social_media_buttons">
+          <a href="https://w.app/krCp7O">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
 
-                <a href="https://www.instagram.com/yure.sx_/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-            
+          <a href="https://www.instagram.com/yure.sx_/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
+      </div>
     </footer>
 
     <script src="/src/javascript/script.js"></script>
-    
-</body>
+  </body>
 </html>
